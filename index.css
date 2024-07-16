@@ -7,7 +7,8 @@
 }
 .text-shadow{
     text-shadow: 1px 1px 2px rgba(138, 138, 138, 0.8);
-    font-family: "Playwrite DK Loopet", cursive;
+    font-family: "Josefin Sans", sans-serif;
+    border-left: 5px solid var(--neon-pink);
 }
 
 body {
@@ -30,6 +31,7 @@ p {
 
 /* Navbar */
 header{
+    z-index: -1;
     backdrop-filter: blur(20px);
 }
 .menu-bar {
@@ -37,6 +39,7 @@ header{
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+    color: #000000;
   }
   .item {
     color: black;
@@ -115,6 +118,20 @@ header{
 
 /* aboutme */
 
+
+.aboutme .about-circle{
+
+        position: absolute;
+        background-color: #f0f0f0;
+        border-radius: 50%;
+        height: 40vw;
+        width: 40vw;
+        margin: 0 auto;
+        top: -75px;
+        right: -100px;
+        z-index: -1;
+}
+
 .aboutme {
     display: flex;
     flex-direction: column;
@@ -154,11 +171,13 @@ iframe {
 
 .highlightcontent {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 3vw;
 }
+
 
 .highlightporj {
     margin-left: 1.5vw;
@@ -167,6 +186,29 @@ iframe {
 
 
 /* project */
+
+/* fullpage */
+.fp-controlArrow.fp-prev {
+    left: 0;
+    border: solid var(--neon-pink);
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+    
+    cursor: pointer;
+}
+.fp-controlArrow.fp-next {
+    right: 0;
+    border: solid var(--neon-pink);
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
 
 .slideproj {
     display: flex;
@@ -226,11 +268,6 @@ iframe {
 
 }
 
-/* fullpage */
-.fp-arrow.fp-prev {
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #000 transparent transparent;
-}
 
 .contacts form {
     padding: 20px;

@@ -8,3 +8,6 @@ function refreshTime() {
 }
 
 setInterval(refreshTime, 1000);
+
+$('.fp-custom-arrow.prev').on('click', function(){ fullpage_api.moveSlideLeft(); });
+$('.fp-custom-arrow.next').on('click', function(){ fullpage_api.moveSlideRight(); });

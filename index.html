@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+
 
   <!-- icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -72,7 +72,10 @@
     </div>
     <div class="section s2">
       <section class="container aboutme">
-        <h2 class="w3-animate-left w3-center topic text-shadow">About me</h2>
+
+        <div class="about-circle"></div>
+        <div data-aos="fade-up"><h2 class="topic text-shadow" >About me</h2></div>
+        
         <div class="desabout">
             <p>สวัสดีครับ! ผมชื่อ John Doe นักพัฒนาเว็บด้าน Front-end
                 ที่หลงใหลในการสร้างประสบการณ์ใช้งานที่ดีให้กับผู้ใช้ผ่านทางเว็บไซต์
@@ -96,29 +99,23 @@
         <div>
           <h2 class="text-shadow">Highlighted Project</h2>
         </div>
-        <div class="highlightcontent">
-          <div class="highlightvideo">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c?si=CN3M72G0XLS4us2i"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="highlightcontent container">
+          <div class="row align-items-start">
+            <div class="highlightvideo col col-xl-6 col-lg-12 col-md-12 col-sm-12">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c?si=CN3M72G0XLS4us2i"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 align-self-center">
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore possimus error sed, perspiciatis nisi deserunt odit, sequi molestias sapiente cupiditate fuga. Nesciunt nobis perferendis voluptatum aliquid accusamus unde non optio aut porro! Veritatis libero voluptates a illo assumenda dolorum atque? Deleniti quos dignissimos perspiciatis recusandae animi, commodi et facilis?</p>
           </div>
-          <div class="highlightporj">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, odio distinctio quo quia dolore
-              cupiditate, a, assumenda incidunt quas voluptatum eius alias sunt hic quos! Quia voluptas unde neque eos
-              error aperiam eaque temporibus magni accusamus a molestias ipsam, dolorem reprehenderit, exercitationem,
-              dolore minus sequi maxime. Natus tenetur ex placeat amet alias laboriosam accusantium nihil recusandae
-              ratione distinctio? Dolor officiis aspernatur sed, accusamus magni fugit nemo, quidem unde laudantium
-              culpa adipisci facere id eligendi voluptatem temporibus placeat quas sapiente. Unde inventore corporis
-              porro alias facere ullam deleniti sequi repellendus, labore veritatis, nisi praesentium dolorem harum vero
-              quaerat? Aperiam, eos possimus.</p>
-          </div>
+          
         </div>
       </section>
     </div>
 
 
-    <!-- เปลี่ยนสีไม่ได้ -->
     <div class="section s4 container projects">
 
       <div class="slide">
@@ -137,13 +134,13 @@
           </a>
         </div>
 
-        <div class="fp-arrow fp-controlArrow fp-prev"></div>
+
       </div>
 
       <div class="slide">
         <div class="slideproj">
-          <img src="proj.jpg" alt="proj2" class="imgproj">
-          <h1>Project2</h1>
+          <img src="proj2.jpg" alt="proj2" class="imgproj">
+          <h1 class="text-shadow">Project2</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem non quod excepturi animi consequuntur
             commodi facere at quis totam deserunt. Impedit consequatur dicta tempora debitis obcaecati perferendis
             praesentium odit necessitatibus.</p>
@@ -159,8 +156,8 @@
 
       <div class="slide">
         <div class="slideproj">
-          <img src="proj.jpg" alt="proj3" class="imgproj">
-          <h1>Project3</h1>
+          <img src="proj3.jpg" alt="proj3" class="imgproj">
+          <h1 class="text-shadow">Project3</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem non quod excepturi animi consequuntur
             commodi facere at quis totam deserunt. Impedit consequatur dicta tempora debitis obcaecati perferendis
             praesentium odit necessitatibus.</p>
@@ -181,7 +178,7 @@
       <section class="container contacts">
         <form action="" class="contact">
           <div class="contact-title">
-            <h2>Get in touch</h2>
+            <h2 class="text-shadow">Get in touch</h2>
             <hr>
           </div>
           <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
@@ -198,7 +195,8 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="index.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -219,7 +217,15 @@
       navigation: true,
       anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
       showActiveTooltip: true,
+      navigationTooltips: ['Home', 'About me', 'Highlight project', 'My projects', 'Contact'],
+      controlArrows: true,
+  controlArrowsHTML: [
+    '<div class="my-arrow"><i class="fas fa-arrow-alt-circle-left"></i></i></div>',
+    '<div class="my-arrow"><i class="fas fa-arrow-alt-circle-right"></i></div>'
+  ],
+
     })
+
   </script>
 
 
