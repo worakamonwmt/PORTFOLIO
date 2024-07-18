@@ -5,6 +5,7 @@
     --white: #ffffff;
     --black: #000000;
 }
+้
 
 *{
   font-family: 'Kanit', sans-serif;
@@ -34,6 +35,11 @@ p {
     font-size: 1.25rem;
 }
 
+
+section {
+  margin-top: 12.5rem;
+
+}
 /* Navbar */
 header {
     display: flex;
@@ -67,25 +73,27 @@ header {
   }
 
   #myBtn {
-    display: inline-flex; 
-    position: fixed;
 
-    align-items: center;
-    justify-content: center;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 
     height: 60px;
     width: 60px;
-    bottom: 2rem;
-    right: 2rem;
+
     z-index: 999; 
+
     font-family: "Josefin Sans", sans-serif;
     font-size: 1rem;
+    
     padding: 10px 20px;
     background-color: rgba(138, 138, 138, 0.8);
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 100%; 
+
     transition: background-color 0.3s;
    
   }
@@ -159,15 +167,12 @@ header {
 
 
 /* aboutme */
-
-
-
 .aboutme {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+
     text-align: center;
     
 }
@@ -203,7 +208,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    /* height: 100vh; */
     text-align: center;
 }
 
@@ -299,7 +304,7 @@ iframe {
   }
   
   .text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: "Sarabun", sans-serif;
     color: black;
    
@@ -399,6 +404,26 @@ iframe {
 
 /* Further adjustments for even smaller screens */
 @media (max-width: 480px) {
+  .topic{
+    text-shadow: 1px 1px 2px rgba(138, 138, 138, 0.8);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+
+}
+.category{
+  font-size: 1rem;
+}
+
+.text {
+  font-size: 1rem;
+
+}
+.text strong{
+  font-size: 1.5rem;
+  font-family: "Sarabun", sans-serif;
+}
+
   .icons {
     width: 50px;
     height: 50px;
