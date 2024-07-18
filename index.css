@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lilita+One);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 :root {
     --neon-pink: #FF61BE;
@@ -226,7 +227,7 @@ iframe {
 
 .highlightcontent p{
   font-size: 1.5rem;
-    font-family: "Sarabun", sans-serif;
+  font-family: "Sarabun", sans-serif;
 
 }
 
@@ -235,6 +236,74 @@ iframe {
     margin-left: 1.5vw;
     justify-content: center;
 }
+/* skills */
+.skillzone {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background: black;
+  width: 100%;
+  margin-top: 12.5rem;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.topic-skill {
+  color: var(--white);
+  font-style: italic;
+  font-size: 1.75rem;
+  font-family: "Sarabun", sans-serif;
+  text-align: center;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.svg-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+svg.radial-progress {
+  height: auto;
+  max-width: 240px;
+  padding: 0;
+  transform: rotate(-90deg);
+  width: 100%;
+  border-radius: 50%;
+}
+
+svg.radial-progress circle {
+  fill: transparent;
+  stroke: #fff;
+}
+
+svg.radial-progress circle.bar-static {
+  stroke: #fafafa !important;
+}
+
+svg.radial-progress circle.bar--animated {
+  stroke: #ff057c; /* Pink color */
+  stroke-dasharray: 188.49555921538757; /* 2 * Math.PI * 30 */
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+svg.radial-progress text {
+  fill: #fafafa;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  text-anchor: middle;
+  text-shadow: 0 0 5px #0000007a;
+}
+
 
 
 /* project */
