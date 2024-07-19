@@ -7,6 +7,11 @@
   --black: #000000;
 }
 
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+  }
+
 ้ * {
   font-family: 'Kanit', sans-serif;
 }
@@ -29,6 +34,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 
@@ -43,24 +49,6 @@ section {
 }
 
 
-body::-webkit-scrollbar {
-  width: 12px;
-  /* กำหนดความกว้างของ scroll */
-}
-
-body::-webkit-scrollbar-track {
-  background: transparent;
-  /* สีพื้นหลัง scroll */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: black;
-  /* กำหนดสีของแถบเลื่อน scroll */
-  border-radius: 20px;
-  /* กำหนดความโค้งมนของแถบเลื่อน scroll */
-  border: 1px solid white;
-  /* กำหนดกรอบเพื่อเว้นระยะรอบแถบเลื่อน scroll */
-}
 
 /* Navbar */
 header {
@@ -211,7 +199,7 @@ header {
 
 .aboutme .desabout span {
   position: relative;
-  color: #aaaaaa;
+  color: #cfcfcf;
   font-size: 1.5rem;
   transition: 0.25s;
   font-family: "Sarabun", sans-serif;
@@ -224,7 +212,21 @@ header {
   font-family: "Sarabun", sans-serif;
 }
 
+
+/* education */
+
+
+.box-edu{
+  border-radius: 12px 0px 0px 12px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
 /* highlight */
+.container-fulid .highlight{
+  background-color: #000;
+}
 .highlight {
   display: flex;
   flex-direction: column;
@@ -232,6 +234,7 @@ header {
   align-items: flex-start;
   /* height: 100vh; */
   text-align: center;
+
 }
 
 iframe {
@@ -277,8 +280,52 @@ iframe {
   justify-content: center;
 }
 
+/* new skill */
+.skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 10px; 
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.items-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px; 
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+.logo-skill{
+  border-radius: 3px;
+  transition: 0.15s ease;
+}
+
+.logo-skill:hover{
+  transform: scale(0.9);
+}
+
+.item svg {
+  margin-right: 10px;
+}
+
+.logo-pink {
+  background-color:#FF61BE;
+}
+.logo-black{
+  background-color:#ff34aa;
+}
+
+
 /* skills */
-.skillzone {
+.Highlight {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -289,63 +336,6 @@ iframe {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
-.topic-skill {
-  color: var(--white);
-  font-style: italic;
-  font-size: 1.75rem;
-  font-family: "Sarabun", sans-serif;
-  text-align: center;
-}
-
-.svg-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.svg-container div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-svg.radial-progress {
-  height: auto;
-  max-width: 240px;
-  padding: 0;
-  transform: rotate(-90deg);
-  width: 100%;
-  border-radius: 50%;
-}
-
-svg.radial-progress circle {
-  fill: transparent;
-  stroke: #fff;
-}
-
-svg.radial-progress circle.bar-static {
-  stroke: #fafafa !important;
-}
-
-svg.radial-progress circle.bar--animated {
-  stroke: #ff057c;
-  /* Pink color */
-  stroke-dasharray: 188.49555921538757;
-  /* 2 * Math.PI * 30 */
-  stroke-width: 4px;
-  stroke-linecap: round;
-}
-
-svg.radial-progress text {
-  fill: #fafafa;
-  font-size: 16px;
-  font-weight: 700;
-  text-anchor: middle;
-  text-shadow: 0 0 5px #0000007a;
-}
-
 
 
 /* project */

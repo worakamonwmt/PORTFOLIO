@@ -43,17 +43,23 @@
 
 </head>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+  <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+</svg></button>
 
 <header>
   <nav class="menu-bar fixed-top" id="menu-bar">
     <div class="group">
       <p class="item title">WORAK</p>
     </div>
+
+    <span><a href="tel:0922424895">TEL : 0922424895</a></span>
+    <span><a href="mailto:worakamon.wmt@gmail.com">E-MAIL : worakamon.wmt@gmail.com</a></span>
+
+
     <div class="group m-2">
       <p>Location: Local time GMT (+7:00)
-      <p><span id="time"></span></p>
-      </p>
+      <p><span id="time"></span></p></p>
     </div>
   </nav>
 </header>
@@ -99,11 +105,46 @@
     </section>
   </div>
 
-  <div class="section s3 container">
-    <section class="container highlight">
-      <div data-aos="fade-right">
-        <h2 class="topic text-shadow border-pink col col-12">Showcase</h2>
+
+  <div class="container-fulid education">
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="https://placehold.co/400x250" alt="Avatar" class="image" style="width:100%;border-radius:0px; margin:0;">
       </div>
+      <div class="col-lg-6">
+        <div data-aos="fade-right container">
+          <h2 class="topic border-pink col col-12 pt-4" style="margin-bottom: 0;">Education</h2>
+        </div>
+        <div class="box-edu">
+          <h2>Princess Sirindhorn's College</h2>
+          <h3>โรงเรียนสิรินธรราชวิทยาลัย</h3>
+          <p>โครงการส่งเสริมศักยภาพห้องเรียนพิเศษวิทยาศาสตร์ คณิตศาสตร์ เทคโนโลยี และสิ่งแวดล้อม (SMTE)</p>
+          <p>2561 - 2564</p>
+        </div>
+
+        <div class="box-edu">
+          <h2>King Mongkut's University of Technology Thonburi</h2>
+          <h3>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</h3>
+          <p>คณะวิศวกรรมศาสตร์ สาขาคอมพิวเตอร์</p>
+          <p>2564 - ปัจจุบัน</p>
+        </div>
+
+
+      </div>
+    </div>
+    
+
+  </div>
+    
+    
+
+  <section class="container-fulid Highlight">
+
+    <div class="container">
+      <div data-aos="fade-right">
+        <h2 class="topic text-shadow border-pink col col-12" style="color: white;">Highlight</h2>
+      </div>
+
       <div class="highlightcontent container">
         <div class="row align-items-start">
           <div class="highlightvideo col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 pb-md-5 pb-sm-5">
@@ -123,65 +164,62 @@
           </div>
 
         </div>
-    </section>
-  </div>
-
-  <section class="container-fulid skillzone">
-
-    <div class="container">
-      <div data-aos="fade-right">
-        <h2 class="topic text-shadow border-pink col col-12" style="color: white;">Skills</h2>
       </div>
 
-      <section class="svg-container mt-4">
-        <div>
-          <h2 class="topic-skill">HTML</h2>
-          <svg class="radial-progress" data-countervalue="70" viewBox="0 0 80 80">
-            <circle class="bar-static" cx="40" cy="40" r="30"></circle>
-            <circle class="bar--animated" cx="40" cy="40" r="30"></circle>
-            <text class="countervalue start" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70</text>
-          </svg>
-        </div>
-        <div>
-          <h2 class="topic-skill">CSS</h2>
-          <svg class="radial-progress" data-countervalue="60" viewBox="0 0 80 80">
-            <circle class="bar-static" cx="40" cy="40" r="30"></circle>
-            <circle class="bar--animated" cx="40" cy="40" r="30"></circle>
-            <text class="countervalue start" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">60</text>
-          </svg>
-        </div>
-        <div>
-          <h2 class="topic-skill">JAVASCRTIPT</h2>
-          <svg class="radial-progress" data-countervalue="60" viewBox="0 0 80 80">
-            <circle class="bar-static" cx="40" cy="40" r="30"></circle>
-            <circle class="bar--animated" cx="40" cy="40" r="30"></circle>
-            <text class="countervalue start" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">60</text>
-          </svg>
-        </div>
-        <div>
-          <h2 class="topic-skill">SQL</h2>
-          <svg class="radial-progress" data-countervalue="50" viewBox="0 0 80 80">
-            <circle class="bar-static" cx="40" cy="40" r="30"></circle>
-            <circle class="bar--animated" cx="40" cy="40" r="30"></circle>
-            <text class="countervalue start" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">50</text>
-          </svg>
-        </div>
-        <div>
-          <h2 class="topic-skill">PYTHON</h2>
-          <svg class="radial-progress" data-countervalue="65" viewBox="0 0 80 80">
-            <circle class="bar-static" cx="40" cy="40" r="30"></circle>
-            <circle class="bar--animated" cx="40" cy="40" r="30"></circle>
-            <text class="countervalue start" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">65</text>
-          </svg>
-        </div>
-
-      </section>
-
     </div>
+  </section>
 
+  <section class="container">
+    <div class="row">
+      <div class="col col-xl-8">
+        <div class="skills">
 
+          <img src="logo/c.svg" alt="Avatar" class="logo-skill logo-pink" style="width:100%" >
+          <img src="logo/c++.svg" alt="Avatar" class="logo-skill logo-black" style="width:100%">
+          <img src="logo/python.svg" alt="Avatar" class="logo-skill logo-pink" style="width:100%">
+        </div>
+        <div class="skills">
+          <img src="logo/html.svg" alt="Avatar" class="logo-skill logo-black" style="width:100%">
+          <img src="logo/css.svg" alt="Avatar" class="logo-skill logo-pink" style="width:100%">
+          <img src="logo/javascript.svg" alt="Avatar" class="logo-skill logo-black" style="width:100%">
+        </div>
 
-
+        <div class="items-container">
+          <div class="item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-short"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
+            </svg>
+            Skills
+          </div>
+          
+          <div class="item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+              class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4" />
+            </svg>
+            Tools
+          </div>
+        </div>
+       
+        <div class="skills">
+          <img src="logo/postgresql.svg" alt="Avatar" class="logo-skill logo-black" style="width:100%">
+          <img src="logo/angular.svg" alt="Avatar" class="logo-skill logo-pink" style="width:100%">
+          <img src="logo/nodejs.svg" alt="Avatar" class="logo-skill logo-black" style="width:100%">
+        </div>
+        <div class="skills">
+          <img src="logo/boostrap.svg" alt="Avatar" class="logo-skill logo-pink" style="width:100%">
+          <img src="logo/react.svg" alt="Avatar" class="logo-skill logo-black" style="width:100%">
+          <img src="logo/github.svg" alt="Avatar" class="logo-skill logo-pink" style="width:100%">
+        </div>
+      </div>
+      <div class="col col-xl-4">
+        <h2>Skills & Tools</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum perspiciatis velit officiis quibusdam, a ut itaque officia quo incidunt neque, molestias modi sint ex, placeat ab excepturi iure. Quod cum ducimus obcaecati temporibus molestiae suscipit! Sunt voluptatem iste tempora et architecto. Sed odio quae optio consequatur laboriosam cum quod fugit.</p>
+      </div>
+    </div>
   </section>
 
   <section class="container">
