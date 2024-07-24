@@ -9,32 +9,53 @@ function refreshTime() {
 
 setInterval(refreshTime, 1000);
 
-window.onscroll = function () {
+window.onscroll = function() {
   scrollFunction();
 };
+
+var prevScrollpos = window.pageYOffset;
 
 function scrollFunction() {
   var navbar = document.getElementById("menu-bar");
   var mybutton = document.getElementById("myBtn");
+  var currentScrollPos = window.pageYOffset;
 
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (currentScrollPos > 100) {
     mybutton.style.display = "block";
-    navbar.style.backgroundColor = "rgba(240, 240, 240, 0.1)";
+    navbar.style.backgroundColor = "rgba(240, 240, 240, 0.8)";
     navbar.style.backdropFilter = "blur(20px)";
     navbar.style.color = "black";
+    navbar.style.top = "0"; 
+    var navLinks = document.querySelectorAll('.nav-link, .navbar-brand, .social-icons a');
+    navLinks.forEach(function(link) {
+      link.style.color = "black";
+    });
   } else {
     mybutton.style.display = "none";
     navbar.style.backgroundColor = "transparent";
     navbar.style.backdropFilter = "none";
     navbar.style.color = "white";
+    navbar.style.top = "0"; // แนบด้านบน
+    var navLinks = document.querySelectorAll('.nav-link, .navbar-brand, .social-icons a');
+    navLinks.forEach(function(link) {
+      link.style.color = "white";
+    });
   }
+  
+  // Hide the navbar when scrolling down and show it when scrolling up
+  if (prevScrollpos > currentScrollPos) {
+    navbar.style.top = "0"; // show navbar
+  } else {
+    navbar.style.top = "-60px"; // hide navbar (adjust the value if needed)
+  }
+  prevScrollpos = currentScrollPos;
 }
-
 
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
 
 
 function radial_animate() {
