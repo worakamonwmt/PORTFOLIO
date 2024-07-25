@@ -25,19 +25,13 @@ function scrollFunction() {
     navbar.style.backgroundColor = "transparent";
     navbar.style.backdropFilter = "none";
     navbar.style.color = "white";
-    navbar.style.top = "0"; // แนบด้านบน
+    navbar.style.top = "0"; 
     var navLinks = document.querySelectorAll('.nav-link, .navbar-brand, .social-icons a');
     navLinks.forEach(function(link) {
       link.style.color = "white";
     });
   }
   
-  // Hide the navbar when scrolling down and show it when scrolling up
-  if (prevScrollpos > currentScrollPos) {
-    navbar.style.top = "0"; // show navbar
-  } else {
-    navbar.style.top = "-60px"; // hide navbar (adjust the value if needed)
-  }
   prevScrollpos = currentScrollPos;
 }
 
