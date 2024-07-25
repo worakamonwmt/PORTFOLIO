@@ -222,6 +222,7 @@ header {
   height: 150px; 
   object-fit: cover; 
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .edu-card {
@@ -230,16 +231,23 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
   background-color: #f8f9fa;
   border-radius: 10px;
-  margin: 10px;
-  min-height: 300px; 
+  min-height: 400px; 
+  padding: 10px;
+
+  
 }
 
 .edu-card h3 {
   margin: 10px 0;
 }
+
+.edu-card .name-shcool{
+  font-family: "Sarabun", sans-serif;
+}
+
+
 
 /* showcase */
 .highlight{
@@ -327,9 +335,8 @@ header {
   margin-bottom: 30px;
 }
 
-.category {
+.w3-tag {
   font-family: "Josefin Sans", sans-serif;
-  background-color: var(--neon-pink);
   display: inline-flex;
   text-align: center;
   padding: 0.25rem 0.75rem;
@@ -337,10 +344,11 @@ header {
   color: var(--white);
   font-weight: bold;
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 8%;
+  left: 4%;
   transition: opacity 0.5s ease;
 }
+
 
 .image {
   display: block;
@@ -362,7 +370,7 @@ header {
   text-align: center;
 }
 
-.box:hover .category {
+.box:hover .w3-tag {
   opacity: 0;
 }
 
@@ -430,11 +438,6 @@ header {
 .social-icons-btn {
   display: flex;
 }
-
-.icons svg {
-  fill: black;
-}
-
 .icons {
   width: 80px;
   height: 80px;
@@ -442,21 +445,53 @@ header {
   font-weight: 500;
   text-decoration: none;
   background: white;
-
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   color: #fff;
   cursor: pointer;
-  transition:
-    all 0.15s ease;
+  transition: all 0.15s ease;
+  overflow: hidden; 
+  position: relative; 
+}
+
+.icons svg {
+  width: 50%; 
+  height: 50%; 
+  border-radius: 50%; 
+  fill: black;
 }
 
 .icons:hover {
-  background: var(--neon-pink);
-  transform: scale(1.1);
+  border-radius: 50%;
+  overflow: hidden;
 }
+
+.icons-facebook:hover {
+  background: #4267B2;
+  transition: all 0.65s;
+  transform: rotateY(360deg);
+}
+
+.icons-github:hover {
+  background: #3d3b3b;
+  transition: all 0.65s;
+  transform: rotateY(360deg);
+}
+
+.icons-line:hover {
+  background: #06c755;
+  transition: all 0.65s;
+  transform: rotateY(360deg);
+}
+
+.icons-linkedin:hover {
+  background: #0A66C2;
+  transition: all 0.65s;
+  transform: rotateY(360deg);
+}
+
 
 .last-contact{
   margin-bottom: 0;
@@ -496,9 +531,6 @@ header {
     font-size: 4rem;
     margin-bottom: 4rem;
 
-  }
-  .category {
-    font-size: 1rem;
   }
 
 
