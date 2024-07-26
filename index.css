@@ -132,6 +132,10 @@ header {
 .button.navbar-toggler{
   stroke: #ffffff;
 }
+.navbar-toggler-icon{
+  filter: brightness(0) invert(1);
+}
+
 
 /* First page */
 .firstpage {
@@ -243,7 +247,7 @@ header {
   min-height: 400px; 
   padding: 10px;
   filter: grayscale(60%);
-  transition: filter 0.3s ease-in, transform 0.5s ease-in;
+  transition: filter 0.3s ease-in, transform 0.3s ease-in;
  
 }
 
@@ -297,8 +301,8 @@ header {
 }
 .logo-skill{
   border-radius: 3px;
+  
 }
-
 
 .item svg {
   margin-right: 10px;
@@ -314,7 +318,7 @@ header {
 .logo-skill-wrapper {
   position: relative;
   width: 100%;
-  transition: opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .number-label {
   position: absolute;
@@ -326,6 +330,8 @@ header {
   font-size: 2.25rem;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
+  opacity: 0.2;
+  z-index: 2;
 }
 
 .font-Fira{
@@ -335,8 +341,9 @@ header {
 
 .logo-skill-wrapper:hover{
   transform: scale(0.9);
-
 }
+
+
 
 
 /* project */
@@ -409,6 +416,10 @@ header {
 
 
 /* contact */
+
+#contact .last-contact{
+  margin-top: 10px;
+}
 .wave {
   overflow: hidden;
   position: relative;
