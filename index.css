@@ -665,11 +665,14 @@ hr.new1 {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  overflow: visible; /* เพิ่มส่วนนี้ */
 }
 
 .social-icons-btn {
   display: flex;
+  overflow: visible; /* เพิ่มส่วนนี้ */
 }
+
 .icons {
   width: 80px;
   height: 80px;
@@ -684,8 +687,7 @@ hr.new1 {
   color: #fff;
   cursor: pointer;
   transition: all 0.15s ease;
-  overflow: hidden; 
-  position: relative; 
+  position: relative;
 }
 
 .icons svg {
@@ -697,37 +699,38 @@ hr.new1 {
 
 .icons:hover {
   border-radius: 50%;
-  overflow: hidden;
+  overflow: visible; /* เพิ่มส่วนนี้ */
 }
 
 .icons-facebook:hover {
   background: #4267B2;
-  transition: all 0.65s;
-  transform: rotateY(360deg);
+  transform: translateY(5px);
+  transition: all 0.3s;
 }
 
 .icons-github:hover {
   background: #3d3b3b;
-  transition: all 0.65s;
-  transform: rotateY(360deg);
+  transform: translateY(5px);
+  transition: all 0.3s;
 }
 
 .icons-line:hover {
   background: #06c755;
-  transition: all 0.65s;
-  transform: rotateY(360deg);
+  transform: translateY(5px);
+  transition: all 0.3s;
 }
 
 .icons-linkedin:hover {
   background: #0A66C2;
-  transition: all 0.65s;
-  transform: rotateY(360deg);
+  transform: translateY(5px);
+  transition: all 0.3s;
 }
 
-
-.last-contact{
+.last-contact {
   margin-bottom: 0;
 }
+
+
 
 
 @media (max-width: 768px) {
